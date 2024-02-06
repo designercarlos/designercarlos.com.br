@@ -44,9 +44,12 @@
 /* END OF TOKENIZED COLOR VARIABLES */
 }
 
-html{
+body{
     /* Default Body Text Style*/
     font-family: 'Roboto', sans-serif;
     font-size: 16pt;
     color: var(--txt-primary);
+
+    /* Default Site Background */
+    background-color: var(--bkg-primary);
 }
