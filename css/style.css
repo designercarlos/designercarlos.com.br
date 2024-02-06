@@ -1,0 +1,52 @@
+*{
+/* PPRIMITIVE COLOR VARIABLES */
+
+    /* Gray Shades*/
+    --black: #010101;
+    --darker: #101015;
+    --dark: #333335;
+    --gray: #C7C7C9;
+    --light: #FDFDFE;
+
+    /* Brand Colors */
+    --primary: #8C31F5;
+    --secondary: #4E31F5;
+    --tertiary: #6C52FF;
+    --quaternary: #9A88FF;
+    --quintenary: #3155F5;
+    --sextenary: #3190F5;
+
+/* END OF PPRIMITIVE COLOR VARIABLES */
+}
+    
+.mode-dark{
+/* TOKENIZED COLOR VARIABLES */
+
+    /* Background Colors */
+    --bkg-primary: var(--darker);
+    --bkg-secondary: var(--black);
+    --bkg-tertiary: var(--tertiary);
+    --bkg-queternary: var(--sextenary);
+
+    /* Border Colors */
+    --border-primary: var(--gray);
+    --border-secondary: var(--tertiary);
+    --border-tertiary: var(--quintenary); 
+
+    /* Text Colors */
+    --txt-primary: var(--light);
+    --txt-secondary: var(--gray);
+    --txt-ertiary: var(--quaternary);
+    --txt-quaternary: var(--tertiary);
+    --txt-quintenary: var(--sextenary);
+    --txt-sextenary: var(--quintenary);
+
+/* END OF TOKENIZED COLOR VARIABLES */
+}
+
+html{
+    /* Default Body Text Style*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 16pt;
+    color: var(--txt-primary);
+}
