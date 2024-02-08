@@ -1,6 +1,5 @@
-*{
 /* PPRIMITIVE COLOR VARIABLES */
-
+*{
     /* Gray Shades*/
     --black: #010101;
     --darker: #101015;
@@ -9,18 +8,17 @@
     --light: #FDFDFE;
 
     /* Brand Colors */
-    --primary: #8C31F5;
-    --secondary: #4E31F5;
-    --tertiary: #6C52FF;
+    --primary: #4E31F5;
+    --secondary: #6C52FF;
+    --tertiary: #8C31F5;
     --quaternary: #9A88FF;
     --quintenary: #3155F5;
     --sextenary: #3190F5;
-
-/* END OF PPRIMITIVE COLOR VARIABLES */
 }
+/* END OF PPRIMITIVE COLOR VARIABLES */
     
-.mode-dark{
 /* TOKENIZED COLOR VARIABLES */
+.mode-dark{
 
     /* Background Colors */
     --bkg-primary: var(--darker);
@@ -36,20 +34,77 @@
     /* Text Colors */
     --txt-primary: var(--light);
     --txt-secondary: var(--gray);
+    --txt-tertiary: var(--quaternary);
+    --txt-quaternary: var(--tertiary);
+    --txt-quintenary: var(--sextenary);
+    --txt-sextenary: var(--quintenary);
+
+    /* Label Colors */
+        --label-primary: var(--light);
+        --label-secondary: var(--primary);
+}
+.mode-light{
+    /* Background Colors */
+    --bkg-primary: var(--light);
+    --bkg-secondary: var(--gray);
+    --bkg-tertiary: var(--tertiary);
+    --bkg-queternary: var(--sextenary);
+
+    /* Border Colors */
+    --border-primary: var(--gray);
+    --border-secondary: var(--tertiary);
+    --border-tertiary: var(--quintenary); 
+
+    /* Text Colors */
+    --txt-primary: var(--darker);
+    --txt-secondary: var(--dark);
     --txt-ertiary: var(--quaternary);
     --txt-quaternary: var(--tertiary);
     --txt-quintenary: var(--sextenary);
     --txt-sextenary: var(--quintenary);
 
-/* END OF TOKENIZED COLOR VARIABLES */
+    /* Label Colors */
+    --label-primary: var(--light);
+    --label-secondary: var(--primary);
 }
+/* END OF TOKENIZED COLOR VARIABLES */
 
+/* GLOBAL TEXT STYLES */
 body{
     /* Default Body Text Style*/
     font-family: 'Roboto', sans-serif;
     font-size: 16pt;
+    font-weight: light;
+    line-height: 1.75;
     color: var(--txt-primary);
 
     /* Default Site Background */
     background-color: var(--bkg-primary);
 }
+h1, h2, h3, h4, h5, h6 {
+    /* Default font*/
+    font-family: 'Spartan', sans-serif;
+}
+button{
+    /* Default Button font*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 18pt;
+    font-weight: medium;
+    line-height: 1;
+    color: var(--label-primary);
+}
+/* END OF GLOBAL TEXT STYLES */
+
+/* GLOBAL BACKGROUND STYLES */
+.glass-1{
+    backdrop-filter: blur(10px);
+    background: linear-gradient(-150deg, #fff4 0%, var(--dark)44 100%);
+};
+.gradient-1{
+
+}
+,.gradient-3{
+
+}
+
+/* END OF GLOBAL BACKGROUND STYLES */
