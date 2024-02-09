@@ -44,7 +44,7 @@
 }
 
 /* TOKENIZED COLOR VARIABLES */
-.mode-dark{
+.dark-theme{
 
     /* Background Colors */
     --bkg-primary: var(--darker);
@@ -69,7 +69,7 @@
         --label-primary: var(--light);
         --label-secondary: var(--primary);
 }
-.mode-light{
+.light-theme{
     /* Background Colors */
     --bkg-primary: var(--light);
     --bkg-secondary: var(--gray);
@@ -94,6 +94,14 @@
     --label-secondary: var(--primary);
 }
 /* END OF TOKENIZED COLOR VARIABLES */
+
+.round-theme{
+    --radius-025: var(--n025);
+    --radius-050: var(--n050);
+    --radius-100: var(--n100);
+    --radius-150: var(--n150);
+    --radius-200: var(--n200);
+}
 
 body{
     /* Default Site Background */
