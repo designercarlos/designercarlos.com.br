@@ -1,6 +1,7 @@
-/* PPRIMITIVE COLOR VARIABLES */
 *{
-    /* Gray Shades*/
+/* PPRIMITIVE COLOR VARIABLES **
+
+    ** Gray Shades*/
     --black: #010101;
     --darker: #101015;
     --dark: #333335;
@@ -14,9 +15,34 @@
     --quaternary: #9A88FF;
     --quintenary: #3155F5;
     --sextenary: #3190F5;
+/* END OF PPRIMITIVE COLOR VARIABLES **
+
+** PPRIMITIVE NUMBER VARIABLES */
+--n025: 04pt;
+--n050: 08pt;
+--n100: 16pt;
+--n150: 24pt;
+--n200: 24pt;
+--n250: 32pt;
+--n300: 40pt;
+--n350: 48pt;
+--n400: 56pt;
+--n450: 64pt;
+--n500: 72pt;
+/* END OF PPRIMITIVE NUMBER VARIABLES **
+
+** TOKENIZED  NUMBER VARIABLES */
+/* END OF TOKENIZED  NUMBER VARIABLES **
+
+** Default Body Text Style*/
+    font-family: 'Roboto', sans-serif;
+    font-size:var(--n100);
+    font-weight: light;
+    line-height: 1.75;
+    color: var(--txt-primary);
+
 }
-/* END OF PPRIMITIVE COLOR VARIABLES */
-    
+
 /* TOKENIZED COLOR VARIABLES */
 .mode-dark{
 
@@ -69,42 +95,32 @@
 }
 /* END OF TOKENIZED COLOR VARIABLES */
 
-/* GLOBAL TEXT STYLES */
 body{
-    /* Default Body Text Style*/
-    font-family: 'Roboto', sans-serif;
-    font-size: 16pt;
-    font-weight: light;
-    line-height: 1.75;
-    color: var(--txt-primary);
-
     /* Default Site Background */
     background-color: var(--bkg-primary);
 }
+
+/* GLOBAL TEXT STYLES */
 h1, h2, h3, h4, h5, h6 {
     /* Default font*/
-    font-family: 'Spartan', sans-serif;
+    font-family: 'Spartan', 'Roboto', sans-serif;
 }
 button{
     /* Default Button font*/
-    font-family: 'Roboto', sans-serif;
+
     font-size: 18pt;
     font-weight: medium;
     line-height: 1;
     color: var(--label-primary);
+    border-radius: var(--radius-150);
 }
 /* END OF GLOBAL TEXT STYLES */
 
 /* GLOBAL BACKGROUND STYLES */
 .glass-1{
     backdrop-filter: blur(10px);
-    background: linear-gradient(-150deg, #fff4 0%, var(--dark)44 100%);
-};
-.gradient-1{
-
-}
-,.gradient-3{
-
+    background-color: #2239;
+    background: #2239 linear-gradient(150deg, #fff4 0%, #fff0 100%);
 }
 
 /* END OF GLOBAL BACKGROUND STYLES */
