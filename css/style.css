@@ -17,6 +17,14 @@
     --sextenary: #3190F5;
 /* END OF PPRIMITIVE COLOR VARIABLES **
 
+* GRADIENT VARIABLES */
+--glass-1: linear-gradient(150deg, #fff4 0%, #fff0 100%);;
+--gradient-1: linear-gradient(150deg, #fff4 0%, #fff0 100%);
+--gradient-2: linear-gradient(150deg, #fff4 0%, #fff0 100%);
+--gradient-3: linear-gradient(150deg, var(--tertiary) 0%, var(--secondary) 100%);
+--gradient-4: linear-gradient(150deg, #fff4 0%, #fff0 100%);
+/* END OF GRADIENT VARIABLES *
+
 ** PPRIMITIVE NUMBER VARIABLES */
 --n025: 04pt;
 --n050: 08pt;
@@ -40,8 +48,8 @@
     font-weight: light;
     line-height: 1.75;
     color: var(--txt-primary);
-
 }
+
 
 /* TOKENIZED COLOR VARIABLES */
 .dark-theme{
@@ -49,7 +57,7 @@
     /* Background Colors */
     --bkg-primary: var(--darker);
     --bkg-secondary: var(--black);
-    --bkg-tertiary: var(--tertiary);
+    --bkg-tertiary: var(--gradient-3);
     --bkg-queternary: var(--sextenary);
 
     /* Border Colors */
@@ -63,7 +71,7 @@
     --txt-tertiary: var(--quaternary);
     --txt-quaternary: var(--tertiary);
     --txt-quintenary: var(--sextenary);
-    --txt-sextenary: var(--quintenary);
+    --txt-sextenary: var(--gradient-3);
 
     /* Label Colors */
         --label-primary: var(--light);
@@ -111,24 +119,17 @@ body{
 /* GLOBAL TEXT STYLES */
 h1, h2, h3, h4, h5, h6 {
     /* Default font*/
-    font-family: 'Spartan', 'Roboto', sans-serif;
+    font-family: "League Spartan", sans-serif;
+    font-weight: Regular;
+    color: var(--txt-primary);
 }
 button{
     /* Default Button font*/
 
-    font-size: 18pt;
+    font-size: var(--n100);
     font-weight: medium;
     line-height: 1;
     color: var(--label-primary);
     border-radius: var(--radius-150);
 }
 /* END OF GLOBAL TEXT STYLES */
-
-/* GLOBAL BACKGROUND STYLES */
-.glass-1{
-    backdrop-filter: blur(10px);
-    background-color: #2239;
-    background: #2239 linear-gradient(150deg, #fff4 0%, #fff0 100%);
-}
-
-/* END OF GLOBAL BACKGROUND STYLES */
