@@ -120,9 +120,57 @@ body{
 h1, h2, h3, h4, h5, h6 {
     /* Default font*/
     font-family: "League Spartan", sans-serif;
-    font-weight: Regular;
+    font-weight: regular;
     color: var(--txt-primary);
 }
+h1{
+    font-weight: bold;
+    font-size: var(--txt-450);
+    line-height: 1.1;
+    position: relative;
+    background-clip: text;
+    background: var(--gradient-3);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color:  transparent;
+}
+h1{
+    font-weight: bold;
+    font-size: var(--txt-450);
+    line-height: 1.1;
+    position: relative;
+    background-clip: text;
+    background: var(--gradient-3);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color:  transparent;
+}
+h2{
+    font-size: var(--txt-450);
+    line-height: 1.1;
+    position: relative;
+
+}
+h3{
+    font-size: var(--txt-450);
+    line-height: 1.1;
+    position: relative;
+}
+h4{
+    font-size: var(--txt-450);
+    line-height: 1.1;
+    position: relative;
+}
+h4{
+    font-size: var(--txt-450);
+    line-height: 1.1;
+    position: relative;
+}
+h6{
+    font-size: var(--txt-450);
+    line-height: 1.1;
+    position: relative;
+}
+
+
 button{
     /* Default Button font*/
 
