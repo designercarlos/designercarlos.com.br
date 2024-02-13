@@ -1,1 +1,35 @@
-
+/* Title */
+h1{
+    font-weight: bold;
+    font-size: 4.5rem;
+    line-height: 1;
+    background-clip: text;
+    background: var(--gradient-3);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color:  transparent;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2rem;
+}
+h6{
+    font-size: 1rem;
+}
+h2::before,
+h3::before,
+h4::before,
+h5::before {
+    content: " ";
+    position: relative;
+    height: .75em;
+    width: .25em;
+    display: inline-block;
+    background: var(--gradient-3);
+    vertical-align: top;
+    margin-right: .75rem;
+    margin-top: 0.1em;
+    border-radius: var(--radius-025);
+}
+/* End Of Title */
