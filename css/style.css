@@ -18,26 +18,26 @@
 /* END OF PPRIMITIVE COLOR VARIABLES **
 
 * GRADIENT VARIABLES */
---glass-1: linear-gradient(150deg, #fff4 0%, #fff0 100%);;
+--glass-1: #10101560 linear-gradient(150deg, #fff4 0%, #fff0 100%);;
 --gradient-1: linear-gradient(150deg, #fff4 0%, #fff0 100%);
 --gradient-2: linear-gradient(150deg, #fff4 0%, #fff0 100%);
 --gradient-3: linear-gradient(150deg, var(--tertiary) 0%, var(--secondary) 100%);
 --gradient-4: linear-gradient(150deg, #fff4 0%, #fff0 100%);
 /* END OF GRADIENT VARIABLES *
 
-** PPRIMITIVE NUMBER VARIABLES */
---n025: 04pt;
---n050: 08pt;
---n100: 16pt;
---n150: 24pt;
---n200: 24pt;
---n250: 32pt;
---n300: 40pt;
---n350: 48pt;
---n400: 56pt;
---n450: 64pt;
---n500: 72pt;
-/* END OF PPRIMITIVE NUMBER VARIABLES **
+** TEXT SIZE VARIABLES */
+--txt-025: 04pt;
+--txt-050: 08pt;
+--txt-100: 16pt;
+--txt-150: 24pt;
+--txt-200: 24pt;
+--txt-250: 32pt;
+--txt-300: 40pt;
+--txt-350: 48pt;
+--txt-400: 56pt;
+--txt-450: 64pt;
+--txt-500: 72pt;
+/* TEXT SIZE  VARIABLES **
 
 ** TOKENIZED  NUMBER VARIABLES */
 /* END OF TOKENIZED  NUMBER VARIABLES **
@@ -71,7 +71,7 @@
     --txt-tertiary: var(--quaternary);
     --txt-quaternary: var(--tertiary);
     --txt-quintenary: var(--sextenary);
-    --txt-sextenary: var(--gradient-3);
+    --txt-sextenary: var(--quintenary);
 
     /* Label Colors */
         --label-primary: var(--light);
@@ -104,11 +104,11 @@
 /* END OF TOKENIZED COLOR VARIABLES */
 
 .round-theme{
-    --radius-025: var(--n025);
-    --radius-050: var(--n050);
-    --radius-100: var(--n100);
-    --radius-150: var(--n150);
-    --radius-200: var(--n200);
+    --radius-025: 4pt;
+    --radius-050: 8pt;
+    --radius-100: 16pt;
+    --radius-150: 24pt;
+    --radius-200: 32pt;
 }
 
 body{
