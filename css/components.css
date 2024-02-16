@@ -40,12 +40,21 @@ h4::before {
 /* End Of Title */
 
 /* Buttons*/
+.btn-area
+{
+  display: flex;
+  flex-wrap: wrap;
+}
 button{
     color: var(--label-primary);
     border-radius: var(--radius-200);
-    padding: var(--spacing-100) var(--spacing-400) var(--spacing-100);
+    padding: var(--spacing-100) var(--spacing-200) var(--spacing-100);
     margin: var(--spacing-100);
     box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 280px;
+    align-items: center;
 }
 .btn-label{
     font-size: var(--txt-200);
@@ -54,7 +63,7 @@ button{
     vertical-align: baseline;
 }
 .btn-icon{
-  vertical-align: sub;
+  height: var(--txt-100);
 }
 .btn-primary{      
     background: var(--bkg-quaternary);
