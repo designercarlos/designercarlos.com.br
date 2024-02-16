@@ -1,133 +1,134 @@
 *{
-/* PPRIMITIVE COLOR VARIABLES **
-
-    ** Gray Shades*/
-    --black: #010101;
-    --darker: #101015;
-    --dark: #333335;
-    --gray: #C7C7C9;
-    --light: #FDFDFE;
-
-    /* Brand Colors */
-    --primary: #4E31F5;
-    --secondary: #6C52FF;
-    --tertiary: #8C31F5;
-    --quaternary: #9A88FF;
-    --quintenary: #3155F5;
-    --sextenary: #3190F5;
-/* END OF PPRIMITIVE COLOR VARIABLES **
-
-* GRADIENT VARIABLES */
---glass-1: #10101566 linear-gradient(150deg, #fff4 0%, #fff0 100%); backdrop-filter: blur(10px);
---gradient-1: linear-gradient(150deg, #fff4 0%, #fff0 100%);
---gradient-2: linear-gradient(150deg, #fff4 0%, #fff0 100%);
---gradient-3: linear-gradient(150deg, var(--tertiary) 0%, var(--secondary) 100%);
---gradient-4: linear-gradient(150deg, #fff4 0%, #fff0 100%);
-/* END OF GRADIENT VARIABLES *
-
-** TEXT SIZE VARIABLE */
---txt-100: 18pt;
-/* TEXT SIZE  VARIABLES **
-
-** TOKENIZED  NUMBER VARIABLES */
-/* END OF TOKENIZED  NUMBER VARIABLES **
-
-** Default Body Text Style*/
-    font-family: "League Spartan", sans-serif;
-    font-weight: light;
-    line-height: 1.75;
-    color: var(--txt-primary);
-}
-
-html{
-    max-width: 100%;
-    overflow-x: hidden;
-    font-size:var(--txt-100);
-}
-
-/* TOKENIZED COLOR VARIABLES */
-.dark-theme{
-
-    /* Background Colors */
-    --bkg-primary: var(--darker);
-    --bkg-secondary: var(--black);
-    --bkg-tertiary: var(--gradient-3);
-    --bkg-queternary: var(--sextenary);
-
-    /* Border Colors */
-    --border-primary: var(--gray);
-    --border-secondary: var(--tertiary);
-    --border-tertiary: var(--quintenary); 
-
-    /* Text Colors */
-    --txt-primary: var(--light);
-    --txt-secondary: var(--gray);
-    --txt-tertiary: var(--quaternary);
-    --txt-quaternary: var(--tertiary);
-    --txt-quintenary: var(--sextenary);
-    --txt-sextenary: var(--quintenary);
-
-    /* Label Colors */
+    /* PPRIMITIVE COLOR VARIABLES **
+    
+        ** Gray Shades*/
+        --black: #010101;
+        --darker: #101015;
+        --dark: #333335;
+        --gray: #C7C7C9;
+        --light: #FDFDFE;
+    
+        /* Brand Colors */
+        --primary: #4E31F5;
+        --secondary: #6C52FF;
+        --tertiary: #8C31F5;
+        --quaternary: #9A88FF;
+        --quintenary: #3155F5;
+        --sextenary: #3190F5;
+    /* END OF PPRIMITIVE COLOR VARIABLES **
+    
+    * GRADIENT VARIABLES */
+    --glass-1: #10101566 linear-gradient(150deg, #fff4 0%, #fff0 100%); backdrop-filter: blur(10px);
+    --gradient-1: linear-gradient(150deg, #fff4 0%, #fff0 100%);
+    --gradient-2: linear-gradient(150deg, #fff4 0%, #fff0 100%);
+    --gradient-3: linear-gradient(150deg, var(--tertiary) 0%, var(--secondary) 100%);
+    --gradient-4: linear-gradient(150deg, #fff4 0%, #fff0 100%);
+    /* END OF GRADIENT VARIABLES *
+    
+    ** TEXT SIZE VARIABLE */
+    --txt-100: 18pt;
+    /* TEXT SIZE  VARIABLES **
+    
+    ** TOKENIZED  NUMBER VARIABLES */
+    /* END OF TOKENIZED  NUMBER VARIABLES **
+    
+    ** Default Body Text Style*/
+        font-family: "League Spartan", sans-serif;
+        font-weight: light;
+        line-height: 1.75;
+        color: var(--txt-primary);
+    }
+    
+    html{
+        max-width: 100%;
+        overflow-x: hidden;
+        font-size:var(--txt-100);
+    }
+    
+    /* TOKENIZED COLOR VARIABLES */
+    .dark-theme{
+    
+        /* Background Colors */
+        --bkg-primary: var(--darker);
+        --bkg-secondary: var(--black);
+        --bkg-tertiary: var(--gradient-3);
+        --bkg-queternary: var(--sextenary);
+    
+        /* Border Colors */
+        --border-primary: var(--gray);
+        --border-secondary: var(--tertiary);
+        --border-tertiary: var(--quintenary); 
+    
+        /* Text Colors */
+        --txt-primary: var(--light);
+        --txt-secondary: var(--gray);
+        --txt-tertiary: var(--quaternary);
+        --txt-quaternary: var(--tertiary);
+        --txt-quintenary: var(--sextenary);
+        --txt-sextenary: var(--quintenary);
+    
+        /* Label Colors */
+            --label-primary: var(--light);
+            --label-secondary: var(--primary);
+    }
+    .light-theme{
+        /* Background Colors */
+        --bkg-primary: var(--light);
+        --bkg-secondary: var(--gray);
+        --bkg-tertiary: var(--tertiary);
+        --bkg-queternary: var(--sextenary);
+    
+        /* Border Colors */
+        --border-primary: var(--gray);
+        --border-secondary: var(--tertiary);
+        --border-tertiary: var(--quintenary); 
+    
+        /* Text Colors */
+        --txt-primary: var(--darker);
+        --txt-secondary: var(--dark);
+        --txt-ertiary: var(--quaternary);
+        --txt-quaternary: var(--tertiary);
+        --txt-quintenary: var(--sextenary);
+        --txt-sextenary: var(--quintenary);
+    
+        /* Label Colors */
         --label-primary: var(--light);
         --label-secondary: var(--primary);
-}
-.light-theme{
-    /* Background Colors */
-    --bkg-primary: var(--light);
-    --bkg-secondary: var(--gray);
-    --bkg-tertiary: var(--tertiary);
-    --bkg-queternary: var(--sextenary);
-
-    /* Border Colors */
-    --border-primary: var(--gray);
-    --border-secondary: var(--tertiary);
-    --border-tertiary: var(--quintenary); 
-
-    /* Text Colors */
-    --txt-primary: var(--darker);
-    --txt-secondary: var(--dark);
-    --txt-ertiary: var(--quaternary);
-    --txt-quaternary: var(--tertiary);
-    --txt-quintenary: var(--sextenary);
-    --txt-sextenary: var(--quintenary);
-
-    /* Label Colors */
-    --label-primary: var(--light);
-    --label-secondary: var(--primary);
-}
-/* END OF TOKENIZED COLOR VARIABLES */
-
-.round-theme{
-    --radius-025: 4pt;
-    --radius-050: 8pt;
-    --radius-100: 16pt;
-    --radius-150: 24pt;
-    --radius-200: 32pt;
-}
-
-body{
-    /* Default Site Background */
-    background-color: var(--bkg-primary);
-}
-
-/* GLOBAL TEXT STYLES */
-h1, h2, h3, h4, h5, h6 {
-    /* Default font*/
-    font-weight: Normal;
-    color: var(--txt-primary);
-    line-height: 1.1;
-    font-size: 1rem;
-    position: relative;
-
-}
-
-button{
-    /* Default Button font*/
-
-    font-size: var(--n100);
-    font-weight: medium;
-    line-height: 1;
-    color: var(--label-primary);
-    border-radius: var(--radius-150);
-}
-/* END OF GLOBAL TEXT STYLES */
+    }
+    /* END OF TOKENIZED COLOR VARIABLES */
+    
+    .round-theme{
+        --radius-025: 4pt;
+        --radius-050: 8pt;
+        --radius-100: 16pt;
+        --radius-150: 24pt;
+        --radius-200: 32pt;
+    }
+    
+    body{
+        /* Default Site Background */
+        background-color: var(--bkg-primary);
+    }
+    
+    /* GLOBAL TEXT STYLES */
+    h1, h2, h3, h4, h5, h6 {
+        /* Default font*/
+        font-weight: Normal;
+        color: var(--txt-primary);
+        line-height: 1.1;
+        font-size: 1rem;
+        position: relative;
+    
+    }
+    
+    button{
+        /* Default Button font*/
+    
+        font-size: 1.25rem;
+        font-weight: 500;
+        line-height: 1;
+        color: var(--label-primary);
+        border-radius: var(--radius-200);
+        padding: 0.5rem 1.5rem 0.4rem;
+    }
+    /* END OF GLOBAL TEXT STYLES */
