@@ -30,15 +30,15 @@
     --txt-200: 20pt;
 
     /** SPACING VARIABLES */
-    --spacing-100: .5rem;
-    --spacing-200: .75rem;
-    --spacing-300: 1rem;
-    --spacing-400: 1.5rem;
-    --spacing-500: 2rem;
-    --spacing-600: 2.5rem;
-    --spacing-700: 3rem;
-    --spacing-800: 4rem;
-    --spacing-900: 5rem;
+    --spacing-100: 18pt;
+    --spacing-200: 20pt;
+    --spacing-300: 30pt;
+    --spacing-400: 40pt;
+    --spacing-500: 50pt;
+    --spacing-600: 60pt;
+    --spacing-700: 70pt;
+    --spacing-800: 80pt;
+    --spacing-900: 90pt;
     /* TEXT SIZE  VARIABLES **
     
     ** TOKENIZED  NUMBER VARIABLES */
@@ -122,8 +122,8 @@
     .bordered-theme{
         --border-000: unset;
         --border-100: solid .5pt;
-        --border-200:  solid .75pt;
-        --border-300:  solid 1pt ;
+        --border-200:  solid .75pt var(--secondary);
+        --border-300:  solid 1pt;
         --border-400:  solid 1.5pt;
         --border-500:  solid 2pt;
     }

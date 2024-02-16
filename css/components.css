@@ -54,8 +54,7 @@ button{
     vertical-align: baseline;
 }
 .btn-icon{
-  margin: 0 var(--spacing-100);
-  vertical-align: baseline;
+  vertical-align: sub;
 }
 .btn-primary{      
     background: var(--bkg-quaternary);
