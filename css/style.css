@@ -44,7 +44,6 @@
 
 ** Default Body Text Style*/
     font-family: "League Spartan", sans-serif;
-    font-size:var(--n100);
     font-weight: light;
     line-height: 1.75;
     color: var(--txt-primary);
@@ -52,6 +51,7 @@
 
 html{
     max-width: 100%;
+    font-size:var(--txt-100);
 }
 
 /* TOKENIZED COLOR VARIABLES */
@@ -125,10 +125,9 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: Normal;
     color: var(--txt-primary);
     line-height: 1.1;
-    font-size: 1.5rem;
+    font-size: 1rem;
     position: relative;
 }
-
 
 button{
     /* Default Button font*/
