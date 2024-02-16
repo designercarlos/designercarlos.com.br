@@ -38,3 +38,17 @@ h4::before {
     border-radius: var(--radius-025);
 }
 /* End Of Title */
+
+/* Buttons*/
+button{
+    color: var(--label-primary);
+    border-radius: var(--radius-200);
+    padding: 0.5rem 1.5rem 0.4rem;
+}
+.button-primary{
+    background: var(--bkg-quaternary);
+}
+.button-primary{
+    background: var(--bkg-quaternary);
+}
+/* End Of Buttons*/

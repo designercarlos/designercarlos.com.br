@@ -10,7 +10,7 @@
     
         /* Brand Colors */
         --primary: #4E31F5;
-        --secondary: #6C52FF;
+        --secondary: #6C52FF; /*roxo-claro*/
         --tertiary: #8C31F5;
         --quaternary: #9A88FF;
         --quintenary: #3155F5;
@@ -48,11 +48,12 @@
     /* TOKENIZED COLOR VARIABLES */
     .dark-theme{
     
-        /* Background Colors */
+        /* Backgrounds */
         --bkg-primary: var(--darker);
         --bkg-secondary: var(--black);
         --bkg-tertiary: var(--gradient-3);
-        --bkg-queternary: var(--sextenary);
+        --bkg-quaternary: var(--secondary);
+        --bkg-quintenary: transparent;
     
         /* Border Colors */
         --border-primary: var(--gray);
@@ -76,7 +77,8 @@
         --bkg-primary: var(--light);
         --bkg-secondary: var(--gray);
         --bkg-tertiary: var(--tertiary);
-        --bkg-queternary: var(--sextenary);
+        --bkg-quaternary: var(--secondary);
+        --bkg-quintenary: transparent;
     
         /* Border Colors */
         --border-primary: var(--gray);
@@ -123,12 +125,8 @@
     
     button{
         /* Default Button font*/
-    
         font-size: 1.25rem;
         font-weight: 500;
         line-height: 1;
-        color: var(--label-primary);
-        border-radius: var(--radius-200);
-        padding: 0.5rem 1.5rem 0.4rem;
     }
     /* END OF GLOBAL TEXT STYLES */
