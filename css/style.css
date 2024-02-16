@@ -27,6 +27,7 @@
     
     /** TEXT SIZE VARIABLE */
     --txt-100: 18pt;
+    --txt-200: 20pt;
 
     /** SPACING VARIABLES */
     --spacing-100: .5rem;
@@ -142,11 +143,5 @@
         position: relative;
     
     }
-    
-    button{
-        /* Default Button font*/
-        font-size: 1.25rem;
-        font-weight: 500;
-        line-height: 1;
-    }
+
     /* END OF GLOBAL TEXT STYLES */

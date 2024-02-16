@@ -43,19 +43,25 @@ h4::before {
 button{
     color: var(--label-primary);
     border-radius: var(--radius-200);
-    padding: var(--spacing-100) var(--spacing-4 00) var(--spacing-100);
+    padding: var(--spacing-100) var(--spacing-400) var(--spacing-100);
     margin: var(--spacing-100);
+    box-sizing: border-box;
+}
+.btn-label{
+    font-size: var(--txt-200);
+    font-weight: 500;
+    line-height: 1.2;
 }
 .btn-primary{      
     background: var(--bkg-quaternary);
-    border: var(--border-2);
+    border: var(--border-200);
 }
 .btn-secondary {
     background: var(--bkg-quintenary);
-    border: var(--border-5);
+    border: var(--border-500);
 }
 .btn-tertiary {
     background: var(--bkg-quintenary);
-    border: var(--border-0);
+    border: var(--border-000);
 }
 /* End Of Buttons*/
