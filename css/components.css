@@ -51,6 +51,11 @@ button{
     font-size: var(--txt-200);
     font-weight: 500;
     line-height: 1.2;
+    vertical-align: baseline;
+}
+.btn-icon{
+  margin: 0 var(--spacing-100);
+  vertical-align: baseline;
 }
 .btn-primary{      
     background: var(--bkg-quaternary);
