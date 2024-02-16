@@ -25,8 +25,19 @@
     --gradient-4: linear-gradient(150deg, #fff4 0%, #fff0 100%);
     /* END OF GRADIENT VARIABLES *
     
-    ** TEXT SIZE VARIABLE */
+    /** TEXT SIZE VARIABLE */
     --txt-100: 18pt;
+
+    /** SPACING VARIABLES */
+    --spacing-100: .5rem;
+    --spacing-200: .75rem;
+    --spacing-300: 1rem;
+    --spacing-400: 1.5rem;
+    --spacing-500: 2rem;
+    --spacing-600: 2.5rem;
+    --spacing-700: 3rem;
+    --spacing-800: 4rem;
+    --spacing-900: 5rem;
     /* TEXT SIZE  VARIABLES **
     
     ** TOKENIZED  NUMBER VARIABLES */
@@ -105,6 +116,15 @@
         --radius-100: 16pt;
         --radius-150: 24pt;
         --radius-200: 32pt;
+    }
+
+    .bordered-theme{
+        --border-000: unset;
+        --border-100: solid .5pt;
+        --border-200:  solid .75pt;
+        --border-300:  solid 1pt ;
+        --border-400:  solid 1.5pt;
+        --border-500:  solid 2pt;
     }
     
     body{

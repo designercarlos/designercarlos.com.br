@@ -43,12 +43,19 @@ h4::before {
 button{
     color: var(--label-primary);
     border-radius: var(--radius-200);
-    padding: 0.5rem 1.5rem 0.4rem;
+    padding: var(--spacing-100) var(--spacing-4 00) var(--spacing-100);
+    margin: var(--spacing-100);
 }
-.button-primary{
+.btn-primary{      
     background: var(--bkg-quaternary);
+    border: var(--border-2);
 }
-.button-primary{
-    background: var(--bkg-quaternary);
+.btn-secondary {
+    background: var(--bkg-quintenary);
+    border: var(--border-5);
+}
+.btn-tertiary {
+    background: var(--bkg-quintenary);
+    border: var(--border-0);
 }
 /* End Of Buttons*/
