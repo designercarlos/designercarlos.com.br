@@ -25,18 +25,8 @@
 --gradient-4: linear-gradient(150deg, #fff4 0%, #fff0 100%);
 /* END OF GRADIENT VARIABLES *
 
-** TEXT SIZE VARIABLES */
---txt-025: 04pt;
---txt-050: 08pt;
---txt-100: 16pt;
---txt-150: 24pt;
---txt-200: 24pt;
---txt-250: 32pt;
---txt-300: 40pt;
---txt-350: 48pt;
---txt-400: 56pt;
---txt-450: 64pt;
---txt-500: 72pt;
+** TEXT SIZE VARIABLE */
+--txt-100: 18pt;
 /* TEXT SIZE  VARIABLES **
 
 ** TOKENIZED  NUMBER VARIABLES */
@@ -51,6 +41,7 @@
 
 html{
     max-width: 100%;
+    overflow-x: hidden;
     font-size:var(--txt-100);
 }
 
@@ -127,6 +118,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.1;
     font-size: 1rem;
     position: relative;
+
 }
 
 button{
