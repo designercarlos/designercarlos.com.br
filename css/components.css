@@ -68,13 +68,92 @@ button{
 .btn-primary{      
     background: var(--bkg-quaternary);
     border: var(--border-200);
+    border-color: var(--border-secondary);
 }
 .btn-secondary {
     background: var(--bkg-quintenary);
     border: var(--border-500);
+    border-color: var(--border-secondary);
 }
 .btn-tertiary {
     background: var(--bkg-quintenary);
     border: var(--border-000);
 }
 /* End Of Buttons*/
+
+/* Header*/
+
+header {
+    display: flex;
+    width: 100vw;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: start;
+    position: fixed;
+    z-index: 999999;
+  }
+ .header-logo {
+    z-index: 9999;
+    margin: var(--spacing-100);
+ }
+/* Hamburguer Menu */
+.hb-menu {
+    width: 100vw;
+    max-width: 375px;
+    right: 0;
+    position: fixed;
+    top: 0;
+    padding: var(--spacing-100);
+    box-sizing: border-box;
+  }
+.hb-menu[open]{
+    background: var(--bkg-quaternary);
+    height: 100vh;
+}
+.hb-menu ::marker {
+    content: '';
+}
+.hb-menu-list {
+    padding: unset;
+}
+.hb-menu-btn {
+    background: var(--bkg-quaternary);
+    border: unset;
+    border-radius: var(--radius-100);
+    padding: var(--spacing-150);
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+}
+.hb-menu-btn-icon {
+    min-height: 28px;
+    position: relative;
+  }
+  .hb-menu[open] .hb-menu-btn-icon {
+    top: 8pt;
+
+  }
+.hb-menu-btn-icon-elm {
+    display: block;
+    height: 1.5pt;
+    width: 24pt;
+    background-color: var(--border-secondary);
+    border-radius: var(--radius-025);
+    position: relative;
+}
+.hb-menu-btn-icon-elm-2 {
+    margin: 8pt 0;
+}
+.hb-menu[open] .hb-menu-btn-icon-elm-1 {
+    transform: rotate(45deg);
+}
+.hb-menu[open] .hb-menu-btn-icon-elm-2 {
+    display: none;
+}
+.hb-menu[open] .hb-menu-btn-icon-elm-3 {
+    transform: rotate(-45deg);
+}
+.hb-menu ::marker {
+    content: '';
+}
+/* End Of Hamburguer Menu */
