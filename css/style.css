@@ -146,7 +146,7 @@ main {
 }
 
 /* GLOBAL TEXT STYLES */
-h1, h2, h3, h4, h5, h6 {
+.heading {
     /* Default font*/
     font-weight: Normal;
     color: var(--txt-primary);
@@ -155,5 +155,10 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 
 }
-
 /* END OF GLOBAL TEXT STYLES */
+
+/* LAYOUT */
+.section {
+    padding: var(--spacing-500) var(--spacing-100);
+  }
+/* END OF LAYOUT */
