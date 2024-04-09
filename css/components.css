@@ -23,9 +23,9 @@ h6{
     font-size: 0.75rem;
     color: var(--txt-secondary);
 }
-h2::before,
-h3::before,
-h4::before {
+.heading::before,
+.heading::before,
+.heading::before {
     content: " ";
     position: relative;
     height: .75em;
