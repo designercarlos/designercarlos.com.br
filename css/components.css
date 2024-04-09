@@ -80,7 +80,6 @@ button{
 /* End Of Buttons*/
 
 /* Header*/
-
 header {
     display: flex;
     width: 100vw;
@@ -94,6 +93,7 @@ header {
     z-index: 9999;
     margin: var(--spacing-100);
  }
+
 /* Hamburguer Menu */
 .hb-menu {
     width: 100vw;
@@ -157,3 +157,18 @@ header {
     content: '';
 }
 /* End Of Hamburguer Menu */
+/* End Of Header */
+
+/* Accordion */
+.accordion-summary {
+    padding: 0 var(--spacing-100);
+    box-sizing: border-box;
+  }
+.accordion-heading {
+    width: fit-content;
+    display: inline-block;
+  }
+.accordion-summary::marker {
+    content: '';
+}
+/* End Of Accordion */
