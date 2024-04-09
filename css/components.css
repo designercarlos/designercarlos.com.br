@@ -168,21 +168,25 @@ header {
     padding: var(--spacing-100);
     box-sizing: border-box;
   }
+  .accordion-summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 .accordion-heading {
-    display: inline-block;
     width: fill-available;
     width: -moz-available;
     width: -webkit-fill-available;
 }
-.accordion-summary::marker{
-    content: '';
-}
 .accordion-summary::after {
-    display: inline-block;
-    content: url(./icons/icone-mais.svg);
+    content: url(../icons/icone-mais.svg);
     width: fill-available;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .accordion[open=""] .accordion-summary::after  {
-    content: url(./icons/icone-menos.svg);
+    content: url(../icons/icone-menos.svg);
 }
 /* End Of Accordion */
