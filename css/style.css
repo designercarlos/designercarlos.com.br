@@ -157,3 +157,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* END OF GLOBAL TEXT STYLES */
+
+/* LAYOUT */
+.section {
+    padding: var(--spacing-500) var(--spacing-100);
+}
+/* END OF LAYOUT */
