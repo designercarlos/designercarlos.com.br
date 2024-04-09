@@ -163,6 +163,7 @@ header {
 .accordion{
     padding: var(--spacing-100);
     margin-bottom: var(--spacing-200);
+    position: relative;
 }
 .accordion-1 {
     border-bottom: var(--border-100) var(--border-secondary);
@@ -171,6 +172,19 @@ header {
     background-image: url(../images/fundo-acordeao.svg);
     background-size: cover;
     border-radius: var(--radius-050);
+    box-shadow: 0px 12px 8px #0003, 0px 4px 4px #0005;
+}
+}
+.accordion-2::before {
+    border-radius: var(--radius-050);
+    content: '';
+    background: var(--bkg-secondary);
+    top: 1pt;
+    left: 1pt;
+    bottom: 1pt;
+    right: 1pt;
+    position: absolute;
+    z-index:-1;
 }
 .accordion > * {
     padding: var(--spacing-100);
@@ -186,6 +200,7 @@ header {
     width: fill-available;
     width: -moz-available;
     width: -webkit-fill-available;
+    margin: unset;
 }
 .accordion-summary::after {
     content: url(../icons/icone-mais.svg);

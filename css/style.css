@@ -74,8 +74,8 @@ html{
 
     /* Border Colors */
     --border-primary: var(--gray);
-    --border-secondary: var(--tertiary);
-    --border-tertiary: var(--quintenary); 
+    --border-secondary: var(--secondary);
+    --border-tertiary: var(--quintenary);
 
     /* Text Colors */
     --txt-primary: var(--light);
@@ -153,7 +153,9 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.1;
     font-size: 1rem;
     position: relative;
-
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: .5em;
 }
 
 /* END OF GLOBAL TEXT STYLES */
