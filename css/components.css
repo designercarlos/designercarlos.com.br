@@ -9,6 +9,20 @@ h1{
    -webkit-text-fill-color:  transparent;
    word-break: break-all;
 }
+/* End Of Title */
+
+.special-txt-1{
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 1;
+    background-clip: text;
+    background: var(--gradient-3);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color:  transparent;
+   word-break: break-all;
+}
+
+/* Heading */
 .heading {
     display: flex;
     align-items: start;
@@ -41,7 +55,7 @@ h3{
     margin-top: 0.1em;
     border-radius: var(--radius-050);
 }
-/* End Of Title */
+/* End Of Heading*/
 
 /* Buttons*/
 .btn-area
@@ -239,9 +253,16 @@ header {
 /* End Of Info Box */
 
 /* Timeline */
+.timeline{
+    position: relative;
+}
 .tl-line{
     background: var(--border-secondary);
     height: 100%;
-    width: 1pt;
+    width: 2pt;
+    display: block;
+    position: absolute;
+    left: 3px;
+    z-index: -1;
 }
 /* End Of Timeline*/

@@ -124,16 +124,6 @@ html{
     --radius-200: 24pt;
 }
 
-.bordered-theme{
-    --border-000: unset;
-    --border-100: solid .5pt;
-    --border-200: solid .75pt;
-    --border-300: solid 1pt;
-    --border-400: solid 1.5pt;
-    --border-500: solid 2pt;
-    --border-500: solid 2pt white;
-}
-
 body{
     /* Default Site Background */
     background-color: var(--bkg-primary);
@@ -157,11 +147,34 @@ h1, h2, h3, h4, h5, h6 {
 h1, h2, h3, h4, h5, h6, p {
     margin-bottom: .5em;
 }
-
+p{
+    font-weight: 300;
+}
+.txt-size-2{
+    font-size: var(--txt-200);
+}
 /* END OF GLOBAL TEXT STYLES */
 
 /* LAYOUT */
 .section {
     padding: var(--spacing-500) var(--spacing-100);
 }
+/* END OF LAYOUT */
+
+/* BORDERS*
+
+* Use the following class in the body element*/
+.bordered-theme{
+    --border-000: unset;
+    --border-100: solid .5pt;
+    --border-200: solid .75pt;
+    --border-300: solid 1pt;
+    --border-400: solid 1.5pt;
+    --border-500: solid 2pt;
+    --border-500: solid 2pt white;
+}
+
+/* Use the following class in the bordered elements*/
+.border-left{      border-left:  var(--border-300);}
+.border-secondary{ border-color: var(--border-secondary);}
 /* END OF LAYOUT */
