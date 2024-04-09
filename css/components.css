@@ -161,7 +161,7 @@ header {
 
 /* Accordion */
 .accordion{
-    border: var(--border-100) var(--border-secondary);
+    border-bottom: var(--border-100) var(--border-secondary);
 }
 .accordion-summary {
     padding: 0 var(--spacing-100);
