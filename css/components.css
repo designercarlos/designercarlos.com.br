@@ -162,6 +162,7 @@ header {
 /* Accordion */
 .accordion{
     padding: var(--spacing-100);
+    margin-bottom: var(--spacing-200);
 }
 .accordion-1 {
     border-bottom: var(--border-100) var(--border-secondary);
@@ -169,6 +170,7 @@ header {
 .accordion-2 {
     background-image: url(../images/fundo-acordeao.svg);
     background-size: cover;
+    border-radius: var(--radius-050);
 }
 .accordion > * {
     padding: var(--spacing-100);
