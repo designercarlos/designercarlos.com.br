@@ -169,14 +169,20 @@ header {
     box-sizing: border-box;
   }
 .accordion-heading {
-    width: fit-content;
     display: inline-block;
-  }
-  .accordion-summary::marker {
-    display: block;
-    content: url(/home/charlie/GitHub/designercarlos.com.br/icons/icone-mais.svg);
+    width: fill-available;
+    width: -moz-available;
+    width: -webkit-fill-available;
 }
-.accordion[open=""] .accordion-summary::marker {
-    content: url(/home/charlie/GitHub/designercarlos.com.br/icons/icone-menos.svg);
+.accordion-summary::marker{
+    content: '';
+}
+.accordion-summary::after {
+    display: inline-block;
+    content: url(./icons/icone-mais.svg);
+    width: fill-available;
+}
+.accordion[open=""] .accordion-summary::after  {
+    content: url(./icons/icone-menos.svg);
 }
 /* End Of Accordion */
