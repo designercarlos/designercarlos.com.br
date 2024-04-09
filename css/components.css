@@ -162,16 +162,21 @@ header {
 /* Accordion */
 .accordion{
     border-bottom: var(--border-100) var(--border-secondary);
+    padding: var(--spacing-100);
 }
-.accordion-summary {
-    padding: 0 var(--spacing-100);
+.accordion > * {
+    padding: var(--spacing-100);
     box-sizing: border-box;
   }
 .accordion-heading {
     width: fit-content;
     display: inline-block;
   }
-.accordion-summary::marker {
-    content: '';
+  .accordion-summary::marker {
+    display: block;
+    content: url(/home/charlie/GitHub/designercarlos.com.br/icons/icone-mais.svg);
+}
+.accordion[open=""] .accordion-summary::marker {
+    content: url(/home/charlie/GitHub/designercarlos.com.br/icons/icone-menos.svg);
 }
 /* End Of Accordion */
