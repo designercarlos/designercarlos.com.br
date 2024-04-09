@@ -9,7 +9,7 @@ h1{
    -webkit-text-fill-color:  transparent;
    word-break: break-all;
 }
-h2, h3, h4, h5, h6 {
+.heading {
     display: flex;
     align-items: start;
 }
@@ -23,8 +23,6 @@ h6{
     font-size: 0.75rem;
     color: var(--txt-secondary);
 }
-.heading::before,
-.heading::before,
 .heading::before {
     content: " ";
     position: relative;
@@ -35,7 +33,7 @@ h6{
     background: var(--gradient-3);
     margin-right: .75rem;
     margin-top: 0.1em;
-    border-radius: var(--radius-025);
+    border-radius: var(--radius-050);
 }
 /* End Of Title */
 
