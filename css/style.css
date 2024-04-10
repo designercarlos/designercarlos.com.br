@@ -18,14 +18,7 @@ box-sizing: border-box;
     --quaternary: #9A88FF;
     --quintenary: #3155F5;
     --sextenary: #3190F5;
-/* END OF PPRIMITIVE COLOR VARIABLES **
-
-* GRADIENT VARIABLES */
---gradient-1: linear-gradient(150deg, #fff4 0%, #fff0 100%);
---gradient-2: linear-gradient(150deg, #fff4 0%, #fff0 100%);
---gradient-3: linear-gradient(150deg, var(--tertiary) 0%, var(--secondary) 100%);
---gradient-4: #10101566 linear-gradient(150deg, #fff4 0%, #fff0 100%);
-/* END OF GRADIENT VARIABLES */
+/* END OF PPRIMITIVE COLOR VARIABLES */
 
 --bd-filter-100: blur(10px);
 
@@ -64,6 +57,13 @@ html{
 
 /* TOKENIZED COLOR VARIABLES */
 .dark-theme{
+
+    /* GRADIENT VARIABLES */
+    --gradient-1: linear-gradient(150deg, #fff4 0%, #fff0 100%);
+    --gradient-2: linear-gradient(180deg, var(--black) 1%, transparent 100%);
+    --gradient-3: linear-gradient(150deg, var(--tertiary) 0%, var(--secondary) 100%);
+    --gradient-4: #10101566 linear-gradient(150deg, #99f2 0%, #1129 100%);
+    /* END OF GRADIENT VARIABLES */
 
     /* Backgrounds */
     --bkg-primary: var(--darker);
