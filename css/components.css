@@ -76,6 +76,7 @@ button{
     background: var(--bkg-tertiary);
     border: var(--border-200);
     border-color: var(--border-secondary);
+    box-shadow: 0px 4px 4px #0005, 0px 12px 8px #0003;
 }
 .btn-secondary {
     background: var(--bkg-quintenary);
