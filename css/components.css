@@ -192,10 +192,17 @@ header {
 /* End Of Header */
 
 /* Accordion */
+.accordion-area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: var(--spacing-500);
+  }
 .accordion{
     padding: var(--spacing-100);
     margin-bottom: var(--spacing-200);
     position: relative;
+    flex-basis: 100%;
 }
 .accordion-1 {
     border-bottom: var(--border-100) var(--border-secondary);
@@ -233,6 +240,7 @@ header {
     width: -moz-available;
     width: -webkit-fill-available;
     margin: unset;
+    padding-right: var(--spacing-200);
 }
 .accordion-area .heading::before  {
     display: none;
