@@ -4,6 +4,7 @@
 /* STYLE */
 
 /* backgrounds */
+.bkg-1{ background: var(--bkg-primary);}
 .bkg-2{ background: var(--bkg-secondary);}
 
 /* borders */
@@ -28,6 +29,18 @@
     display: flex;
     flex-direction: row
 }
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.space-between {
+    justify-content: space-between;
+}
+.space-around {
+    justify-content: space-around;
+}
+.space-evenly {
+    justify-content: space-evenly;
+}
 /*
 ** Alignment */
 .txt-center{   text-align: center;}
@@ -38,15 +51,23 @@
 /* END OF LAYOUT**
 
 /* SPACING */
+.padding-top-900, .pt-900{
+    padding-top: var(--spacing-900);
+}
 .padding-left-200, .pl-200{
     padding-left: var(--spacing-200);
 }
-
+.margin-bottom-600, .mb-600{
+    margin-bottom: var(--spacing-500);
+}
 .margin-bottom-200, .mb-200{
     margin-bottom: var(--spacing-200);
 }
 
 .gap-200{
     gap: var(--spacing-200);
+}
+.gap-500 {
+    gap:var(--spacing-500)
 }
 /* END OF SPACING*/
