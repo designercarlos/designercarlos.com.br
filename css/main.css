@@ -12,7 +12,8 @@ box-sizing: border-box;
     --darker: #101015;
     --dark: #333335;
     --gray: #C7C7C9;
-    --light: #FDFDFE;
+    --light: #ededee;
+    --lighter: #FDFDFE;
 
     /* Brand Colors */
     --primary: #4E31F5;
@@ -26,8 +27,8 @@ box-sizing: border-box;
 --bd-filter-100: blur(10px);
 
 /* TEXT SIZE VARIABLE */
---txt-100: 18pt;
---txt-200: 20pt;
+--txt-100: 14pt;
+--txt-200: 16pt;
 
 /** SPACING VARIABLES */
 --spacing-100: 8pt;
@@ -46,9 +47,9 @@ box-sizing: border-box;
 /* END OF TOKENIZED  NUMBER VARIABLES **
 
 ** Default Body Text Style*/
-    font-family: "League Spartan", sans-serif;
-    font-weight: light;
-    line-height: 1.5;
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+    line-height: 1.75;
     color: var(--txt-primary);
 }
 
@@ -64,7 +65,7 @@ html{
     /* GRADIENT VARIABLES */
     --gradient-1: linear-gradient(150deg, #fff4 0%, #fff0 100%);
     --gradient-2: linear-gradient(180deg, var(--black) 1%, transparent 100%);
-    --gradient-3: linear-gradient(150deg, var(--tertiary) 0%, var(--secondary) 100%);
+    --gradient-3: linear-gradient(170deg, var(--primary) 0%, var(--tertiary) 34%, var(--secondary) 100%);
     --gradient-4: #10101566 linear-gradient(150deg, #99f2 0%, #1129 100%);
     /* END OF GRADIENT VARIABLES */
 
@@ -81,7 +82,7 @@ html{
     --border-tertiary: var(--quintenary);
 
     /* Text Colors */
-    --txt-primary: var(--light);
+    --txt-primary: var(--lighter);
     --txt-secondary: var(--gray);
     --txt-tertiary: var(--quaternary);
     --txt-quaternary: var(--tertiary);
@@ -138,19 +139,31 @@ main {
 }
 
 /* GLOBAL TEXT STYLES */
-h1, h2, h3, h4, h5, h6 {
+h1 {
     /* Default font*/
-    font-weight: Normal;
+    font-family: "Roboto Slab", serif;
+    color: white;
+    font-size: 1rem;
+}
+h2, h3, h4, h5, h6 {
+    /* Default font*/
+    font-family: "Ubuntu", sans-serif;
     color: var(--txt-primary);
-    line-height: 1.1;
     font-size: 1rem;
     position: relative;
 }
+h2, h3, h4 {
+    /* Default font*/
+    font-weight: 400;
+    line-height: 1.5;
+}
+h5, h6 {
+    /* Default font*/
+    font-weight: 400;
+    line-height: 1.5;
+}
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: .5em;
-}
-p{
-    font-weight: 300;
 }
 p:not(:last-child) {
     margin-bottom: 1em;
@@ -168,7 +181,7 @@ p:not(:last-child) {
     position: relative;
     width: 1170px;
     max-width: 100%;
-    padding: var(--spacing-500) var(--spacing-100);
+    padding: var(--spacing-500) var(--spacing-200);
     display: block;
     margin-left: auto;
     margin-right: auto;

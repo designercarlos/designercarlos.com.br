@@ -14,7 +14,7 @@
 
 /* text */
 .hilight-txt, .hl-txt{
-    font-weight: 500;
+    font-weight: 400;
     background-color: var(--secondary);
 }
 
@@ -57,7 +57,16 @@
 .padding-left-200, .pl-200{
     padding-left: var(--spacing-200);
 }
-.margin-bottom-600, .mb-600{
+.margin-top-900, .mt-900{
+    margin-top: var(--spacing-900);
+}
+.margin-bottom-900, .mb-900{
+    margin-bottom: var(--spacing-900);
+}
+.margin-top-500, .mt-500{
+    margin-top: var(--spacing-500);
+}
+.margin-bottom-500, .mb-500{
     margin-bottom: var(--spacing-500);
 }
 .margin-bottom-200, .mb-200{
