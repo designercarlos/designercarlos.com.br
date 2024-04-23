@@ -167,7 +167,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 p:not(:last-child) {
     margin-bottom: 1em;
-  }
+}
+a {
+    font-weight: 400;
+}
 .txt-size-2{
     font-size: var(--txt-200);
 }
