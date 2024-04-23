@@ -5,8 +5,8 @@
     <meta lang="pt-BR">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
@@ -105,8 +105,11 @@
                     background: linear-gradient(0deg, var(--bkg-secondary) 1%, transparent 100%);
                 }
             </style>
-            <img id="heroBkg010" src="./images/linear-text-fill.svg" alt="Texto de preenchimento transparente com contorno gradiente em cores institucionais.">
-            <div id="heroBkg011">
+            <!-- img id="heroBkg010" src="./images/linear-text-fill.svg" alt="Texto de preenchimento transparente com contorno gradiente em cores institucionais." -->
+            <div id="heroBkg010" class="special-txt">
+                respeito, integridade, humanidade e colaboração para criar de soluções inovadoras com melhoria contínua e impactar a vida das pessoas de forma positiva.
+            </div>
+            <div id="heroBkg011" class="section-80vh">
                 <div class="section-container">
                     <div class="hero-title ">
                         <h1 class="title margin-bottom-900">
@@ -121,7 +124,7 @@
                 </div>
             </div>
         </section>
-        <section id="sobre001" class="section bkg-2">
+        <section id="sobre001" class="section section-40vh bkg-2">
             <div class="section-container">
                 <h2 class="heading heading-2">Sobre</h2>
                 <p>Graduado em Design Gráfico e em Marketing Digital, com especialização em
@@ -132,7 +135,7 @@
                     <strong class="hilight-txt">inovação e melhoria contínua</strong>. Para impactar a vida das pessoas de forma positiva. </p>
             </div>
         </section>
-        <section id="servicos001" class="section flex-column gap-200  bkg-2">
+        <section id="servicos001" class="section section-40vh flex-column gap-200  bkg-2">
             <div class="section-container">
                 <h2 class="heading heading-2">Serviços</h2>
                 <div class="heading-area">
@@ -153,14 +156,14 @@
                 </div>
                 <div class="btn-area btn-area flex-row flex-center">
                     <button class="btn-primary">
-                        <a class="btn-link" href="#contato010">
+                        <a class="btn-link" href="#footer001">
                             <label class="btn-label">Contato</label>
                         </a>
                     </button>
                     <button class="btn-secondary">
                         <a class="btn-link" href="https://www.behance.net/charlieffe421c/projects" target="_blank">
-                            <label class="btn-label">Portfólio </label>
-                            <img class="btn-icon" src="./icons/Icone.svg" alt="icon">
+                            <label class="btn-label">Portfólio</label>&nbsp;
+                            <img class="btn-icon" src="./icons/icone-behance.svg" alt="icon">
                         </a>
                     </button>
                 </div>
@@ -500,50 +503,73 @@
         </section>
         <footer id="footer001" class="section bkg-2">
             <div class="section-container">
-                <h2 class="heading heading-2">Contato</h2>
-                <div class="info-box">
-                    <div class="ib-img-area">
-                        <img src="./icons/Icone.svg" alt="icon">
-                    </div>
-                    <div class="ib-txt-area">
-                        <p>Lorem ipsum dolor</p>
-                    </div>
-                </div>
-                <div class="info-box">
-                    <div class="ib-img-area">
-                        <img src="./icons/Icone.svg" alt="icon">
-                    </div>
-                    <div class="ib-txt-area">
-                        <p>Lorem ipsum dolor</p>
-                    </div>
-                </div>
-                <h2 class="heading heading-2">Links Úteis</h2>
-                <div class="info-box">
-                    <div class="ib-img-area">
-                        <img src="./icons/Icone.svg" alt="icon">
-                    </div>
-                    <div class="ib-txt-area">
-                            <a href="https://www.behance.net/charlieffe421c/projects" target="_blank">
-                                Behance
+                <h2 class="heading heading-2 margin-bottom-200">Contato</h2>
+                <div class="info-box-group flex-column gap-200 margin-bottom-400">
+                    <div class="info-box row-gap-unset">
+                        <div class="ib-img-area align-self-center flex-center">
+                            <img src="./icons/icone-telegram.svg" alt="icon">
+                        </div>
+                        <div class="ib-txt-area">
+                            <a href="https://t.me/+5541920013410">
+                                41 9 2001 3410
                             </a>
+                        </div>
+                    </div>
+                    <div class="info-box row-gap-unset">
+                        <div class="ib-img-area align-self-center flex-center">
+                            <img src="./icons/icone-email.svg" alt="icon">
+                        </div>
+                        <div class="ib-txt-area">
+                            <a href="mailto:contato@designercarlos.com.br">
+                                contato@designercarlos.com.br
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="info-box">
-                    <div class="ib-img-area">
-                        <img src="./icons/Icone.svg" alt="icon">
+                    <h2 class="heading heading-2 margin-bottom-200">Links Úteis</h2>
+                <div class="info-box-group flex-column gap-200">
+                    <div class="info-box row-gap-unset">
+                        <div class="ib-img-area align-self-center flex-center">
+                            <img src="./icons/icone-behance.svg" alt="icon">
+                        </div>
+                        <div class="ib-txt-area ">
+                                <a href="https://www.behance.net/charlieffe421c/projects" target="_blank">
+                                    behance.net/charlieffe421c/
+                                </a>
+                        </div>
                     </div>
-                    <div class="ib-txt-area">
-                        <p>Lorem ipsum dolor </p>
+                    <div class="info-box row-gap-unset">
+                        <div class="ib-img-area align-self-center flex-center">
+                            <img src="./icons/icone-github.svg" alt="icon">
+                        </div>
+                        <div class="ib-txt-area">
+                            <a href="https://github.com/designercarlos/" target="_blank">
+                                github.com/designercarlos
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info-box row-gap-unset ">
+                        <div class="ib-img-area align-self-center flex-center">
+                            <img src="./icons/iconelinkedin.svg" alt="ícone: Linkedin">
+                        </div>
+                        <div class="ib-txt-area">
+                            <a href="https://www.linkedin.com/in/designercarlosferreira/" target="_blank">
+                                in/designercarlosferreira
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="info-box">
-                    <div class="ib-img-area">
-                        <img src="./icons/Icone.svg" alt="icon">
-                    </div>
-                    <div class="ib-txt-area">
-                        <p>Lorem ipsum dolor </p>
-                    </div>
-                </div>
+            </div>
+            <div class="section-container txt-center">
+                <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+                    <a property="dct:title" rel="cc:attributionURL" href="https://www.figma.com/file/X21NLmD0EydiI5DCp5dL3p/Meu-Site?type=design&mode=design&t=TJ6tub6PLR3clcF3-1">Design do site</a> por 
+                    <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="http://designercarlos.com.br">Carlos Ferreira</a> sob a licença 
+                    <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0</a> 
+                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""> 
+                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""> 
+                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="">
+                </p> 
+                <p></p>
             </div>
         </footer>
     </main> 

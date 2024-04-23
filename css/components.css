@@ -2,7 +2,7 @@
 .title{
     font-weight: bold;
     font-size: 4rem;
-    line-height: 1;
+    line-height: 1.2;
     background-clip: text;
     background: var(--gradient-3);
    -webkit-background-clip: text;
@@ -110,22 +110,44 @@ button{
 }
 .btn-icon{
   height: var(--txt-100);
+  position: relative;
+  top: .13em;
 }
 .btn-primary{      
     background: var(--bkg-tertiary);
-    border: var(--border-200);
+    border: var(--border-300);
     border-color: var(--border-secondary);
     box-shadow: 0px 4px 4px #0005, 0px 12px 8px #0003;
+    background-size: 250%;
+    transition: 200ms ease-out;
 }
 .btn-secondary {
-    background: var(--bkg-quintenary);
-    border: var(--border-500);
+    background: var(--bkg-quaternary);
+    border: var(--border-300);
     border-color: var(--border-secondary);
+    box-shadow: 0px 4px 4px #0005, 0px 12px 8px #0003;
+    transition: 200ms ease-out;
+    
 }
+.btn-primary:hover {
+    background-position: 100%;
+    box-shadow: 0px 4px 24px -8px var(--quaternary), 0px 8px 32px -16px var(--quaternary);
+}
+.btn-secondary:hover {
+    border-color: var(--border-tertiary);
+    box-shadow:  0px 8px 32px -16px var(--quaternary);
+    background-size: 150%;
+    background-position: 100%;
+  }
 .btn-tertiary {
     background: var(--bkg-quintenary);
     border: var(--border-000);
+    text-shadow: 1px 2px 2px var(--darker);
+    transition: 200ms ease-out;
 }
+.btn-tertiary:hover{
+    text-shadow: 2px 2px 16px var(--secondary);
+  }
 /* End Of Buttons*/
 
 /* Header */
@@ -160,6 +182,7 @@ header {
     width: 100vw;
 }
 .hb-menu::before {
+    content: ' ';
     width: 30vw;
     max-width: 375px;
     position: fixed;
@@ -173,7 +196,7 @@ header {
     backdrop-filter: var(--bd-filter-100);
     height: 100vh;
     box-shadow: -8px 0px 16px #0006, -24px 0px 12px #0005;
-    transition: 200ms ease;
+    transition: 800ms ease;
 }
 .hb-menu ::marker {
     content: '';
@@ -246,6 +269,7 @@ header {
     margin-bottom: var(--spacing-200);
     position: relative;
     flex-basis: 100%;
+    transition: 400ms ease-out;
 }
 .accordion-1 {
     border-bottom: var(--border-100) var(--border-secondary);
@@ -266,6 +290,12 @@ header {
     right: 1pt;
     position: absolute;
     z-index:-1;
+}
+.accordion-summary::after{
+    transition: 200ms ease-out;
+}
+.accordion-summary:hover::after{
+    filter: brightness(200%);
 }
 .accordion > * {
     padding: var(--spacing-100);
