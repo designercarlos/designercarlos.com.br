@@ -172,6 +172,7 @@ p:not(:last-child) {
 a {
     font-weight: 400;
     color: var(--txt-quintenary);
+    text-decoration: none;
 }
 a:hover {
     color: var(--txt-sextenary);
