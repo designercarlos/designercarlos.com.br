@@ -170,6 +170,13 @@ p:not(:last-child) {
 }
 a {
     font-weight: 400;
+    color: var(--txt-quintenary);
+}
+a:hover {
+    color: var(--txt-sextenary);
+}
+a:visited{
+    color: var(--txt-ququaternary);
 }
 .txt-size-2{
     font-size: var(--txt-200);

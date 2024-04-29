@@ -8,6 +8,18 @@
    -webkit-background-clip: text;
    -webkit-text-fill-color:  transparent;
 }
+
+/* Responsivveness */
+@media screen and (min-width: 768px) {
+    .title{
+        font-size: 6rem;
+    }
+}
+@media screen and (min-width: 1096px) {
+    .title{
+        font-size: 8rem;
+    }
+}
 /* End Of Title */
 
 /* Heading */
@@ -59,6 +71,7 @@
     margin-right: .75rem;
     top: .7rem;
     border-radius: var(--radius-050);
+    background-size: 900%;
 }
 .heading-dot::before {
     content: " ";
@@ -262,14 +275,14 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: var(--spacing-500);
   }
 .accordion{
     padding: var(--spacing-100);
     margin-bottom: var(--spacing-200);
     position: relative;
-    flex-basis: 100%;
+    width: 100%;
     transition: 400ms ease-out;
+    height: fit-content;
 }
 .accordion-1 {
     border-bottom: var(--border-100) var(--border-secondary);
@@ -358,5 +371,6 @@ header {
     display: block;
     position: absolute;
     left: 3px;
+    border-radius: 1pt;
 }
 /* End Of Timeline*/

@@ -96,9 +96,9 @@
                 #heroBkg010 {
                     position: fixed;
                     top:0;
-                    opacity: .3;
+                    opacity: .9;
                     width: 100vw;
-
+                    filter: blur(5px)
                 }
                 #heroBkg011 {
                     position: relative;
@@ -107,7 +107,7 @@
             </style>
             <!-- img id="heroBkg010" src="./images/linear-text-fill.svg" alt="Texto de preenchimento transparente com contorno gradiente em cores institucionais." -->
             <div id="heroBkg010" class="special-txt">
-                respeito, integridade, humanidade e colaboração para criar de soluções inovadoras com melhoria contínua e impactar a vida das pessoas de forma positiva.
+                respeito, integridade, humanidade e colaboração para criar soluções inovadoras com melhoria contínua e impactar a vida das pessoas de forma positiva.
             </div>
             <div id="heroBkg011" class="section-80vh">
                 <div class="section-container">
@@ -138,26 +138,28 @@
         <section id="servicos001" class="section section-40vh flex-column gap-200  bkg-2">
             <div class="section-container">
                 <h2 class="heading heading-2">Serviços</h2>
-                <div class="heading-area">
-                    <h3 class="heading heading-3 heading-dot">UX/UI Design</h3>
-                    <h4 class="heading heading-6">Sites e apps</h4>
-                </div>
-                <div class="heading-area">
-                    <h3 class="heading heading-3 heading-dot">Gestão de Produtos Digitais</h3>
-                    <h4 class="heading heading-6">Visão, Roadmap, Scrum, MVP, Lançamentos</h4>
-                </div>
-                <div class="heading-area">
-                    <h3 class="heading heading-3 heading-dot">Marketing Digital</h3>
-                    <h4 class="heading heading-6">Estratégia, campanhas, mídias sociais, consultoria</h4>
-                </div>
-                <div class="heading-area">
-                    <h3 class="heading heading-3 heading-dot">Desenvolvimento Web</h3>
-                    <h4 class="heading heading-6">Site, Loja Virtual, SEO</h4>
+                <div class="grid fit-content center-x margin-y-400 auto-cols-2 gap-200 col-gap-500">
+                    <div class="heading-area">
+                        <h3 class="heading heading-3 heading-dot">UX/UI Design</h3>
+                        <h4 class="heading heading-6">Sites e apps</h4>
+                    </div>
+                    <div class="heading-area">
+                        <h3 class="heading heading-3 heading-dot">Desenvolvimento Web</h3>
+                        <h4 class="heading heading-6">Sites, componentes e SEO</h4>
+                    </div>
+                    <div class="heading-area">
+                        <h3 class="heading heading-3 heading-dot">Gestão de Produtos Digitais</h3>
+                        <h4 class="heading heading-6">Visão, Roadmap, Scrum, MVP, Lançamentos</h4>
+                    </div>
+                    <div class="heading-area">
+                        <h3 class="heading heading-3 heading-dot">Marketing Digital</h3>
+                        <h4 class="heading heading-6">Estratégia, campanhas, mídias sociais, consultoria</h4>
+                    </div>
                 </div>
                 <div class="btn-area btn-area flex-row flex-center">
                     <button class="btn-primary">
                         <a class="btn-link" href="#footer001">
-                            <label class="btn-label">Contato</label>
+                            <label class="btn-label">Contato 🡫</label>
                         </a>
                     </button>
                     <button class="btn-secondary">
@@ -172,12 +174,12 @@
         <section id="ferramentas001" class="section padding-top-900 bkg-1">
             <div class="section-container">
                 <h2 class="heading heading-2 margin-bottom-500">Ferramentas</h2>
-                <div class="flex-row flex-wrap flex-center gap-500">
+                <div class="flex-row flex-wrap flex-center gap-500 col-8 center-x">
                     <img src="./images/figma-logo.png" alt="Figma" width="64">
-                    <img src="./images/xd-logo.png" alt="Adobe XD">
+                    <img src="./images/xd-logo.png" alt="Adobe XD" width="64">
                     <img src="./images/ps-logo.png" alt="Adobe Photoshop" width="64">
-                    <img src="./images/marvel-logo.png" alt="Marvel App">
-                    <img src="./images/hubspot-logo.png" alt="Hubspot">
+                    <img src="./images/marvel-logo.png" alt="Marvel App" width="64">
+                    <img src="./images/hubspot-logo.png" alt="Hubspot" width="64">
                     <img src="./images/wordpress-logo.png" alt="WordPress" width="64">
                     <img src="./images/azure-logo.png" alt="Azure DevOps" width="64">
                     <img src="./images/vs-code-logo.png" alt="Visual Studio Code" width="64">
@@ -191,8 +193,7 @@
         <section id="experiencia001" class="section bkg-1">
             <div class="section-container">
                 <h2 class="heading heading-2">Experiências</h2>
-                <div class="accordion-area">
-            </div>
+                <div class="accordion-area cols-2 space-between">
                 <details class="accordion accordion-2">
                     <summary class="accordion-summary">
                         <div class="heading-area accordion-heading">
@@ -205,7 +206,8 @@
                             Desenvolvimento ágil de componentes e temas de website para instituicões de ensino superior, utilizando tecnologias como HTML5, CSS e JavaScript, as plataformas Hubspot e DUDA e sob a metodologia Scrum.
                         </p>
                     </div>
-                </details>                <details class="accordion accordion-2">
+                </details>
+                <details class="accordion accordion-2">
                     <summary class="accordion-summary">
                         <div class="heading-area accordion-heading">
                             <h3 class="heading h3">Web Designer</h3>
@@ -385,7 +387,7 @@
             <div class="section-container">
                 <h2 class="heading heading-2">FAQ</h2>
                 <div class="accordion-area">
-                    <details class="accordion accordion-1">
+                    <!--details class="accordion accordion-1">
                         <summary class="accordion-summary">
                             <h3 class="accordion-heading">Quais são seus objetivos profissionais?</h3>
                         </summary>
@@ -397,7 +399,7 @@
                                 Além disso, tenho expandido meu conhecimento em desenvolvimento e em gestão de produtos digitais. Pois gostaria de atuar como Product Manager (PM) em times multidisciplinares no futuro.
                             </p>
                         </div>
-                    </details>
+                    </details-->
                     <details class="accordion accordion-1">
                         <summary class="accordion-summary">
                             <h3 class="accordion-heading">O que faz um webdesigner?</h3>
