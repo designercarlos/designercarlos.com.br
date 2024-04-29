@@ -79,7 +79,8 @@ html{
     /* Border Colors */
     --border-primary: var(--gray);
     --border-secondary: var(--secondary);
-    --border-tertiary: var(--quaternary);
+    --border-tertiary: var(--dark);
+    --border-quaternary: var(--quaternary);
 
     /* Text Colors */
     --txt-primary: var(--lighter);

@@ -147,7 +147,7 @@ button{
     box-shadow: 0px 4px 24px -8px var(--quaternary), 0px 8px 32px -16px var(--quaternary);
 }
 .btn-secondary:hover {
-    border-color: var(--border-tertiary);
+    border-color: var(--border-quaternary);
     box-shadow:  0px 8px 32px -16px var(--quaternary);
     background-size: 150%;
     background-position: 100%;
@@ -271,7 +271,7 @@ header {
 /* End Of Header */
 
 /* Accordion */
-.accordion-area {
+.accordion-group {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -328,7 +328,7 @@ header {
     margin: unset;
     padding-right: var(--spacing-200);
 }
-.accordion-area .heading::before  {
+.accordion-group .heading::before  {
     display: none;
 }
 .accordion-summary::after {
@@ -374,3 +374,13 @@ header {
     border-radius: 1pt;
 }
 /* End Of Timeline*/
+
+/* Separator */
+.separator{
+    width: 100%;
+    height: 1pt;
+    background: var(--bkg-primary);
+    border-radius: 1pt;
+    display: block;
+}
+/* End Of Separator */
