@@ -39,9 +39,14 @@ section:hover p:nth-of-type(2) .hilight-txt:nth-of-type(2) { transition-delay: 1
     text-shadow: 2px 2px 1px var(--quintenary), -2px -2px 1px var(--secondary);
     color: var(--bkg-secondary);
     font-weight: 1000;
-    font-size: 96pt;
+    font-size: 5rem;
     line-break: anywhere;
     line-height: 1;
+}
+@media screen and (min-width:768px) {
+    .special-txt {
+        font-size: 8rem;
+    }
 }
 /* END OF STYLE **
 
@@ -56,11 +61,11 @@ section:hover p:nth-of-type(2) .hilight-txt:nth-of-type(2) { transition-delay: 1
 }
 .col-6{
  width: 49.9%;
- min-width: 332px;
+ min-width: 270px;
 }
 .col-8{
     width: 66.6%;
-    min-width: 332px;
+    min-width: 270px;
    }
 .flex-wrap{
     flex-wrap: wrap;
@@ -76,7 +81,6 @@ section:hover p:nth-of-type(2) .hilight-txt:nth-of-type(2) { transition-delay: 1
 }
 .grid{
     display: grid;
-    grid-auto-rows: 1fr;
 }
 .inline-grid{
     display: inline-grid;
@@ -177,6 +181,7 @@ section:hover p:nth-of-type(2) .hilight-txt:nth-of-type(2) { transition-delay: 1
 }
 
 .gap-200{ gap: var(--spacing-200);}
+.gap-350{ gap:var(--spacing-350);}
 .gap-500{ gap:var(--spacing-500);}
 
 .col-gap-500{ column-gap:var(--spacing-500);}

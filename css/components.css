@@ -1,7 +1,7 @@
 /* Title */
 .title{
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 3.5rem;
     line-height: 1.2;
     background-clip: text;
     background: var(--gradient-3);
@@ -195,7 +195,7 @@ header {
     transition: 300ms ease;
     background: var(--bkg-quaternary);
     backdrop-filter: var(--bd-filter-100);
-    height: 100vh;
+    height: 120vh;
     box-shadow: -8px 0px 16px #0006, -24px 0px 12px #0005;    
 }
 .hb-menu ::marker {
@@ -203,8 +203,11 @@ header {
 }
 .hb-menu-list {
     padding: unset;
+    padding-bottom: var(--spacing-300);
     min-width: max-content;
     position: relative;
+    max-height: 90vh;
+    overflow: auto;
 }
 .hb-menu-btn {
     background: var(--bkg-quaternary);
