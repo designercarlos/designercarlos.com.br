@@ -1,0 +1,1 @@
+const accordions=document.querySelectorAll(".accordion");accordions.forEach((o=>{o.addEventListener("toggle",(()=>{o.open&&(accordions.forEach((c=>{c!==o&&(c.open=!1)})),window.scrollBy(0,o.getBoundingClientRect().top-100))}))}));
