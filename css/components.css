@@ -208,6 +208,7 @@ header {
     position: relative;
     max-height: 90vh;
     overflow: auto;
+    list-style: none;
 }
 .hb-menu-btn {
     background: var(--bkg-quaternary);
@@ -322,14 +323,14 @@ header {
     display: none;
 }
 .accordion-summary::after {
-    content: url(../icons/icone-mais.svg);
+    content: url(../icons/mais.svg);
     width: fill-available;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 .accordion[open=""] .accordion-summary::after  {
-    content: url(../icons/icone-menos.svg);
+    content: url(../icons/menos.svg);
 }
 @keyframes accordion{
     0% { transform: scaleY(0.1);}
